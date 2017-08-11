@@ -1,0 +1,83 @@
+@media (max-width: 767px) {
+    ul{
+        -webkit-margin-before: 0px;
+        -webkit-margin-after: 0px;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 0px;
+    }
+    article {
+        width: 100%;
+        height: 220px;
+        img {
+            width: 100%;
+            display: inline-block;
+        }
+        .firstPageInfo {
+            background: rgba(0,0,0,.8);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+    .sortingByDistanceAndPrice {
+        #price, #distance {
+            width: 130px;
+            font-size: 17px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+    }
+    #content{
+        .gallery{
+            margin-top: 150px;
+            width: 330px;
+            a{
+                width: 125px;
+                display: inline-block;
+            }
+        }
+         .sigleInfo{
+            position: absolute;
+            left: 40px;
+        }
+    }
+}
+
+@media only screen and(max-width:991px) {
+    article {
+        .firstPageInfo {
+            background: rgba(0,0,0,.8);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+    #content{
+        .gallery{
+            width: 500px;
+                a {
+                    width: 177px;
+            }
+        }
+    } 
+}
+
+@media only screen and(max-width:1200px) {
+    article {
+        width: 45%;
+        height: 100%;
+        margin: 2% 2%;
+        display: block;
+        text-align: center;
+        img {
+            float: left;
+        }
+    }
+    a {
+        float: none;
+    }
+    article .firstPageInfo {
+        right: 9px;
+        font-size: 15px;
+        text-align: right;
+    }
+}

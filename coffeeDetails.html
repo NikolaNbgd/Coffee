@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <!-- Title -->
+   <!-- Title -->
   <title>Coffee</title>
 
   <!-- Meta tags -->
@@ -27,28 +27,29 @@
 
 <body>
 
-<div class="container">
+<div id="content">
 
-  <div class="sortingByDistanceAndPrice">
-     <a href="#" id="distance" >Sort by distance</a>
-     <a href="#" id="price">Sort by price</a>
+  <h1>Your Coffee Gallery</h1>
+
+  <div>
+      <div class="gallery container-fluid"></div>
+      <div class="sigleInfo"></div>
   </div>
-  <div class="coffeeShops"></div>
+
 
 </div>
 
   <div id="map"></div>
 
-<script>
-function initMap() {
+<script>function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         scrollwheel: false,
         zoom: 2
     });
 
-};
-</script>
+}
 
+</script>
 
   <!-- jQuery library for Fancybox-->
  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -70,7 +71,15 @@ function initMap() {
  </script> -->
 
   <!-- JavaScript -->
- <script src="assets/js/main.js"></script>
+ <script src="assets/js/singleCoffee.js"></script>
+
+
+   <!-- Fancybox script -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });
+  </script>
 
 </body>
 

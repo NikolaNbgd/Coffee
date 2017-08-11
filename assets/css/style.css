@@ -1,2 +1,178 @@
-p {
-  color: red; }
+article {
+  background: #444c5c;
+  background: -webkit-linear-gradient(right top, #444c5c, #ce5a57);
+  background: -o-linear-gradient(bottom left, #444c5c, #ce5a57);
+  background: -moz-linear-gradient(bottom left, #444c5c, #ce5a57);
+  background: linear-gradient(to bottom left, #444c5c, #ce5a57);
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  width: 45%;
+  height: 200px;
+  margin: 2%;
+  display: inline-block;
+  float: left;
+  position: relative;
+  overflow: hidden; }
+  article:hover .hoverDiv {
+    opacity: 1;
+    bottom: 0px; }
+  article a {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    width: 280px;
+    height: 200px; }
+    article a img {
+      width: 100%;
+      height: 100%; }
+  article .hoverDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    bottom: -200px;
+    opacity: 0;
+    transition: .4s ease-in-out; }
+    article .hoverDiv a {
+      color: #000;
+      background: #78a5a3;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 10px;
+      display: inline-block;
+      width: 151px;
+      height: 67px;
+      line-height: 53px;
+      top: 32%;
+      left: 36%;
+      position: absolute;
+      padding: 10px;
+      text-transform: uppercase;
+      font-weight: bold; }
+  article .firstPageInfo {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: inline-block; }
+    article .firstPageInfo .nameOfCoffee {
+      font-style: italic;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+.sortingByDistanceAndPrice {
+  margin-top: 30px; }
+  .sortingByDistanceAndPrice #price, .sortingByDistanceAndPrice #distance {
+    text-decoration: none;
+    width: 180px;
+    height: 50px;
+    display: inline-block;
+    font-size: 19px;
+    border: 1px solid skyblue;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+    transition: .4s ease-in-out; }
+    .sortingByDistanceAndPrice #price:hover, .sortingByDistanceAndPrice #distance:hover {
+      background: lightblue;
+      color: #fff;
+      border: 1px solid transparent; }
+  .sortingByDistanceAndPrice #distance {
+    float: right; }
+
+#content {
+  overflow: hidden;
+  padding: 30px 0px;
+  background: rgba(0, 0, 0, 0.7); }
+  #content .mobileSolution {
+    display: none; }
+  #content h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 50px; }
+  #content .gallery {
+    width: 800px;
+    float: left; }
+    #content .gallery a {
+      width: 200px;
+      display: inline-block; }
+      #content .gallery a img {
+        width: 100%;
+        display: block; }
+      #content .gallery a p {
+        text-align: right; }
+    #content .gallery ul {
+      list-style-type: none; }
+    #content .gallery li {
+      float: left;
+      margin: 10px; }
+  #content p {
+    color: #fff;
+    margin: 0px; }
+  #content .sigleInfo h2 {
+    text-align: left;
+    color: #fff; }
+  #content .sigleInfo .infoSingle {
+    font-size: 20px; }
+
+@media (max-width: 767px) {
+  ul {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px; }
+  article {
+    width: 100%;
+    height: 220px; }
+    article img {
+      width: 100%;
+      display: inline-block; }
+    article .firstPageInfo {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      border-radius: 10px; }
+  .sortingByDistanceAndPrice #price, .sortingByDistanceAndPrice #distance {
+    width: 130px;
+    font-size: 17px;
+    margin-bottom: 20px;
+    display: inline-block; }
+  #content .gallery {
+    margin-top: 150px;
+    width: 330px !important; }
+    #content .gallery a {
+      width: 125px !important;
+      display: inline-block; }
+  #content .sigleInfo {
+    position: absolute;
+    left: 40px; } }
+
+@media only screen and (max-width: 991px) {
+  article .firstPageInfo {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px; }
+  #content .gallery {
+    width: 500px; }
+    #content .gallery a {
+      width: 177px; } }
+
+@media only screen and (max-width: 1200px) {
+  article {
+    width: 45%;
+    height: 100%;
+    margin: 2% 2%;
+    display: block;
+    text-align: center; }
+    article img {
+      float: left; }
+  a {
+    float: none; }
+  article .firstPageInfo {
+    right: 9px;
+    font-size: 15px;
+    text-align: right; } }
